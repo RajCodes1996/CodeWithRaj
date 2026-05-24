@@ -6,16 +6,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Rajarshi Yadav – Full Stack Developer & Computer Science Teacher specializing in AI, ML, Django, PHP and .NET">
-  <meta name="keywords" content="Full Stack Developer, AI Engineer, Django Developer, Computer Science Teacher">
+  <meta name="description" content="Rajarshi Yadav – M.Tech CSE | Advanced AI/ML Specialist & Computer Science Instructor">
+  <meta name="keywords" content="AI Instructor, Machine Learning Educator, Full Stack Developer, Computer Science Teacher, M.Tech CSE">
   <meta name="author" content="Rajarshi Yadav">
 
-  <title>Rajarshi Yadav | Full Stack Developer</title>
+  <title>Rajarshi Yadav | AI & Computer Science Instructor</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Remix Icons -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -29,18 +29,32 @@
   <!-- Main CSS -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- Typewriter Cursor CSS -->
+  <!-- AI Custom Elements Styles -->
   <style>
     #typewriter::after {
       content: "|";
       margin-left: 6px;
       animation: blink 1s infinite;
       font-weight: 600;
+      color: var(--neon-cyan);
     }
-
     @keyframes blink {
       0%, 50%, 100% { opacity: 1; }
       25%, 75% { opacity: 0; }
+    }
+    #ai-matrix-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none;
+      opacity: 0.4;
+    }
+    .ds-banner .container {
+      position: relative;
+      z-index: 2;
     }
   </style>
 
@@ -53,12 +67,11 @@
   <div class="container">
     <div class="ds-header-inner">
       <a href="index.html" class="ds-logo">
-        <span>R</span> Rajarshi Yadav
+        <span>RY</span> Rajarshi Yadav <small class="ms-2 text-muted fs-6 d-none d-sm-inline">// AI_INSTRUCTOR</small>
       </a>
 
       <ul class="ds-social">
-        <li><a href="https://github.com/RajCodes1996"><i class="ri-github-fill"></i></a></li>
-        <!-- <li><a href="#"><i class="ri-linkedin-fill"></i></a></li> -->
+        <li><a href="https://github.com/RajCodes1996" target="_blank"><i class="ri-github-fill"></i></a></li>
         <li><a href="mailto:rajarshiyadav1@gmail.com"><i class="ri-mail-fill"></i></a></li>
       </ul>
     </div>
@@ -67,37 +80,42 @@
 
 <!-- ================= HERO ================= -->
 <div class="ds-banner" data-aos="fade-up">
+  <!-- Interactive Neural Graphics Overlay -->
+  <canvas id="ai-matrix-canvas"></canvas>
+
   <div class="container">
     <div class="row align-items-center">
 
-      <div class="col-md-5">
-        <figure>
-          <img src="assets/images/raj.png" alt="Rajarshi Yadav">
-        </figure>
+      <div class="col-md-5 position-relative">
+        <div class="avatar-glow-wrapper">
+          <figure class="ds-avatar-frame">
+            <img src="assets/images/raj1996.jpg" alt="Rajarshi Yadav AI Specialist">
+          </figure>
+        </div>
       </div>
 
       <div class="col-md-7">
-        <section>
+        <section class="banner-text-block">
           <h1>
             <span id="typewriter"></span><br>
-            <strong><i>Rajarshi Yadav</i></strong><br>
+            <strong>Rajarshi Yadav</strong><br>
             <span class="gradient-text">
-              <span>Portfolio</span>
+              <span>M.Tech CSE // Intelligent Systems</span>
             </span>
           </h1>
 
           <ul class="ds-numbervalulist">
             <li>
-              <strong>5</strong>
-              <span>Years Experience</span>
+              <strong>5+</strong>
+              <span>Years Engineering & AI Exp</span>
             </li>
             <li>
               <strong>20+</strong>
-              <span>Projects</span>
+              <span>Core Algorithms Deployed</span>
             </li>
             <li>
               <strong>200+</strong>
-              <span>Happy Students</span>
+              <span>Engineers & Students Mentored</span>
             </li>
           </ul>
         </section>
@@ -110,16 +128,19 @@
 <!-- ================= ABOUT ================= -->
 <div class="ds-about-section" data-aos="fade-right">
   <div class="container">
-    <section>
-      <h2 class="ds-heading">About Me</h2>
+    <section class="glass-card">
+      <div class="text-center mb-4">
+        <h2 class="ds-heading">Executive Abstract</h2>
+      </div>
       <p>
-     Highly accomplished M.Tech (Computer Science & Engineering) professional and AI/ML Specialist with extensive experience in advanced Computer Science instruction, full-stack system development, and applied Artificial Intelligence research.
-     An innovative educator with strong expertise in Artificial Intelligence, Machine Learning, Data Structures, Algorithms, Database Systems, Software Engineering, and Cloud Computing, integrating industry-grade technical implementation into academic delivery. 
-     Former PGT/TGT – AI & Computer Science at Ajay Satya Prakash Public School and Podar International School, with proven ability to mentor senior secondary and engineering students in advanced computing disciplines.
+        Highly accomplished M.Tech (Computer Science & Engineering) professional and applied AI/ML Specialist with extensive experience spanning advanced computer science instruction, full-stack architectural engineering, and deep learning implementations. 
+      </p>
+      <p>
+        An innovative educator specialized in bridging the gap between theoretical frameworks and industrial deployment. Proven technical proficiency across <strong>Artificial Intelligence neural modeling, complex Data Structures (DSA), Cloud Ecosystems, and Distributed Databases</strong>. Deep background instructing senior secondary, engineering, and advanced academic paths at institutions like Podar International School, driving technical curricula from core Python structures to 3D architectural logic and rapid computer prototyping.
       </p>
 
-      <div class="ds-button-sec text-center">
-        <a href="raj_cvv.pdf" class="ds-button">Download Resume</a>
+      <div class="ds-button-sec text-center mt-5">
+        <a href="raj_cvv.pdf" class="ds-button glow-btn"><i class="ri-file-download-line me-2"></i>Download Artificial Intelligence CV</a>
       </div>
     </section>
   </div>
@@ -130,39 +151,37 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-md-6">
-        <h2 class="ds-heading">Core Skills</h2>
-        <ul class="ds-skills-list">
-          <li>Python Programming</li>
-          <li>Data Structure(DSA)</li>
-          <li>Object Oriented Programming(OOP)</li>
-          <li>Internet Of Things(IOT)</li>
-          <li>Networking</li>
-          <li>Database Management System(DBMS)</li>
-          <li>MySQL / SQL Server</li>
-          <li>Artificial Intelligence(A.I)</li>
-          <li>Machine Learning(ML)</li>
-        </ul>
+      <div class="col-md-6 mb-4">
+        <div class="skills-card">
+          <h2 class="ds-heading"><i class="ri-cpu-line me-2"></i>AI & CS Architecture</h2>
+          <ul class="ds-skills-list">
+            <li><span class="tech-tag tag-ai">Artificial Intelligence (A.I.)</span></li>
+            <li><span class="tech-tag tag-ai">Machine Learning (ML)</span></li>
+            <li><span class="tech-tag tag-ds">Advanced Data Structures (DSA)</span></li>
+            <li><span class="tech-tag tag-ds">Object-Oriented Programming (OOP)</span></li>
+            <li><span class="tech-tag">Database Systems (DBMS)</span></li>
+            <li><span class="tech-tag">MySQL / SQL Server Architecture</span></li>
+            <li><span class="tech-tag">Internet of Things (IoT) Systems</span></li>
+            <li><span class="tech-tag">Distributed Networking</span></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="col-md-6">
-        <h2 class="ds-heading">Other Skills</h2>
-        <ul class="ds-skills-list">
-           <li>JavaScript</li>
-          <li>Python</li>
-          <li>PHP</li>
-          <li>C#</li>
-          <li>Django</li>
-          <li>Laravel</li>
-          <li>.NET</li>
-          <li>MySQL / SQL Server</li>
-          <li>Frontend Development</li>
-          <li>Backend Development</li>
-          <li>Artificial Intelligence</li>
-          <li>Machine Learning</li>
-          <li>Hardware maintenance & Troubleshooting</li>
-          <li>GitHub</li>
-        </ul>
+      <div class="col-md-6 mb-4">
+        <div class="skills-card">
+          <h2 class="ds-heading"><i class="ri-code-s-slash-line me-2"></i>Full-Stack Engineering Stack</h2>
+          <ul class="ds-skills-list">
+            <li><span class="tech-tag tag-lang">Python (AI/Backend Core)</span></li>
+            <li><span class="tech-tag tag-lang">JavaScript (ES6+)</span></li>
+            <li><span class="tech-tag tag-lang">C#</span></li>
+            <li><span class="tech-tag tag-lang">PHP</span></li>
+            <li><span class="tech-tag">Django Enterprise</span></li>
+            <li><span class="tech-tag">Laravel Framework</span></li>
+            <li><span class="tech-tag">.NET Core Architecture</span></li>
+            <li><span class="tech-tag">3D Printing Logic & Tinkercad</span></li>
+            <li><span class="tech-tag">CI/CD & Git Systems</span></li>
+          </ul>
+        </div>
       </div>
 
     </div>
@@ -172,73 +191,63 @@
 <!-- ================= EXPERIENCE ================= -->
 <div class="ds-experience-section" data-aos="fade-up">
   <div class="container">
-    <h2 class="ds-heading">Work Experience</h2>
+    <div class="text-center mb-5">
+      <h2 class="ds-heading">Professional Timeline</h2>
+    </div>
 
     <div class="row ds-experience-list">
 
-      <div class="col-md-6">
-        <section>
-          <span class="ds-year">2020 – 2022</span>
-          <h3 class="ds-officename">JP Techno Park</h3>
-          <span class="ds-department">.NET Developer</span>
-          <p>Worked with WPF, ASP.NET, WinForms, SQL Server, C#, JavaScript</p>
-          <ul>
-            <li>Student & Employee Management Systems</li>
-            <li>Web Development</li>
-            <li>Billing & Admin Panels</li>
-            <li>Secure Authentication Systems</li>
-            <li>CRUD-based Enterprise Applications</li>
-          </ul>
-        </section>
-      </div>
-
-      <div class="col-md-6">
-        <section>
-          <span class="ds-year">2024 – 2025</span>
-          <h3 class="ds-officename">Ajay Satya Prakash Public School</h3>
-          <span class="ds-department">Computer Science Teacher (PGT)</span>
-          <p>AI, Python, Web Development, DBMS, Networking</p>
-          <ul>
-            <li>Teaching Python & Artificial Intelligence</li>
-            <li>CBSE / IT Admin (Support)</li>
-            <li>Web & Database Development</li>
-            <li>Networking & System Fundamentals</li>
-          </ul>
-        </section>
-      </div>
-
-      <div class="col-md-6">
-        <section>
-          <span class="ds-year">2025-2026</span>
+      <div class="col-md-6 mb-4">
+        <div class="experience-card">
+          <span class="ds-year">2025 — 2026</span>
           <h3 class="ds-officename">Podar International School</h3>
-          <span class="ds-department">A.I / Computer Science Teacher (TGT)</span>
-          <p>AI, Python, Web Development, DBMS, Networking</p>
+          <span class="ds-department">AI & Computer Science Instructor (TGT)</span>
+          <p class="text-muted-cyan">Specialization: Deep Learning introduction, automated workflows, physical computing interfaces.</p>
           <ul>
-            <li>Teaching Python & Artificial Intelligence</li>
-            <li>Web & Database Development</li>
-            <li>Networking & System Fundamentals</li>
-            <li>Programming & Coding Instructor</li>
-            <li>Instructor(3D-Printing)</li>
-            <li>Tinkercad (Web-based 3D design)</li>
+            <li>Architected and executed primary Python scripting and conceptual AI curricula.</li>
+            <li>Supervised specialized additive manufacturing labs (3D Printing & CAD processing).</li>
+            <li>Mentored advanced algorithmic design thinking paradigms using Tinkercad systems.</li>
           </ul>
-        </section>
+        </div>
       </div>
 
-      <div class="col-md-6">
-        <section>
-          <span class="ds-year">2020 – Present</span>
-          <h3 class="ds-officename">IT Engineer/Coding Instructor</h3>
-          <span class="ds-department">Full-Stack Developer</span>
-          <p>Django, PHP, Laravel, .NET, AI/ML, MySQL</p>
+      <div class="col-md-6 mb-4">
+        <div class="experience-card">
+          <span class="ds-year">2024 — 2025</span>
+          <h3 class="ds-officename">Ajay Satya Prakash Public School</h3>
+          <span class="ds-department">Computer Science Master (PGT)</span>
+          <p class="text-muted-cyan">Specialization: Python development environments, RDBMS architecture, global data configurations.</p>
           <ul>
-            <li>Secure Login Systems & Admin Panels</li>
-            <li>E-Commerce & Portfolio Websites</li>
-            <li>Software Testing & Optimization</li>
-            <li>AI/ML Applications</li>
-            <li>Database (SQL, Microsoft SQL-SERVER)</li>
-            <li>Hardware  Maintenance</li>
+            <li>Instructed higher-secondary academic tracks across data parsing modules and modern AI applications.</li>
+            <li>Maintained enterprise-level educational data networks and acted as CBSE IT Liaison.</li>
           </ul>
-        </section>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="experience-card">
+          <span class="ds-year">2020 — PRESENT</span>
+          <h3 class="ds-officename">Enterprise Architect & Coding Instructor</h3>
+          <span class="ds-department">Consultant & Full-Stack Engineer</span>
+          <p class="text-muted-cyan">Specialization: Machine Learning pipelines, distributed web builds, secured transactions.</p>
+          <ul>
+            <li>Customized scalable AI analytics models integrated with relational database backends.</li>
+            <li>Developed customized billing frameworks, neural text predictors, and secure web properties using Django and Laravel.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="experience-card">
+          <span class="ds-year">2020 — 2022</span>
+          <h3 class="ds-officename">JP Techno Park</h3>
+          <span class="ds-department">Core .NET Software Engineer</span>
+          <p class="text-muted-cyan">Specialization: Desktop threading, secure authentications, enterprise relational platforms.</p>
+          <ul>
+            <li>Designed and executed enterprise application layouts using WPF, WinForms, and native C# layers.</li>
+            <li>Constructed low-latency queries and relational normalization processes on SQL Server platforms.</li>
+          </ul>
+        </div>
       </div>
 
     </div>
@@ -248,11 +257,15 @@
 <!-- ================= FOOTER ================= -->
 <footer class="ds-footer text-center" data-aos="fade-up">
   <div class="container">
-    <section>
-      <span>Stay in touch</span>
-      <h4>Ready to collaborate?</h4>
-      <a href="mailto:rajarshiyadav1@gmail.com" class="ds-button">Let’s Talk</a>
+    <section class="footer-cta-block">
+      <span>// INITIALIZE CONNECTION</span>
+      <h4>Ready to build intelligence?</h4>
+      <p class="mx-auto style-subtext" style="max-width: 600px;">
+        Available for advanced academic engineering tracks, corporate AI workshops, architectural software strategy, and curriculum development.
+      </p>
+      <a href="mailto:rajarshiyadav1@gmail.com" class="ds-button glow-btn mt-3">Execute Protocol <i class="ri-terminal-box-line ms-2"></i></a>
     </section>
+    <p class="ds-copyright mt-5">&copy; 2026 Rajarshi Yadav. System built with next-gen graphic nodes.</p>
   </div>
 </footer>
 
@@ -268,25 +281,92 @@
   });
 </script>
 
+<!-- LIVE DYNAMIC NEURAL CANVAS ANIMATION -->
+<script>
+  (function() {
+    const canvas = document.getElementById('ai-matrix-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    
+    let width = canvas.width = window.innerWidth;
+    let height = canvas.height = window.innerHeight || 700;
+    
+    window.addEventListener('resize', () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight || 700;
+    });
+
+    const numPoints = 45;
+    const points = [];
+    
+    for (let i = 0; i < numPoints; i++) {
+      points.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        vx: (Math.random() - 0.5) * 0.8,
+        vy: (Math.random() - 0.5) * 0.8,
+        radius: Math.random() * 2 + 1
+      });
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, width, height);
+      
+      // Draw Connections
+      ctx.strokeStyle = 'rgba(0, 242, 254, 0.07)';
+      ctx.lineWidth = 1;
+      for (let i = 0; i < numPoints; i++) {
+        for (let j = i + 1; j < numPoints; j++) {
+          const dist = Math.hypot(points[i].x - points[j].x, points[i].y - points[j].y);
+          if (dist < 150) {
+            ctx.beginPath();
+            ctx.moveTo(points[i].x, points[i].y);
+            ctx.lineTo(points[j].x, points[j].y);
+            ctx.stroke();
+          }
+        }
+      }
+      
+      // Draw and Update Points
+      ctx.fillStyle = 'rgba(157, 78, 221, 0.5)';
+      for (let i = 0; i < numPoints; i++) {
+        const p = points[i];
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fill();
+        
+        p.x += p.vx;
+        p.y += p.vy;
+        
+        if (p.x < 0 || p.x > width) p.vx *= -1;
+        if (p.y < 0 || p.y > height) p.vy *= -1;
+      }
+      
+      requestAnimationFrame(animate);
+    }
+    animate();
+  })();
+</script>
+
 <!-- TYPEWRITER SCRIPT -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-
     const texts = [
-      "Hello! I am Rajarshi",
-      "Full-Stack Developer",
-      "AI / ML Enthusiast",
-      "Computer Science Educator",
-      "Building Intelligent Systems"
+      "SYSTEM_STATUS: ACTIVE",
+      "import rajarshi_yadav as instructor",
+      "AI / Machine Learning Specialist",
+      "M.Tech Computer Science Engineer",
+      "Building Algorithmic Intelligence",
+      "Training Next-Gen Developers"
     ];
 
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
 
-    const typingSpeed = 90;
-    const deletingSpeed = 50;
-    const pause = 1500;
+    const typingSpeed = 60;
+    const deletingSpeed = 30;
+    const pause = 2000;
 
     const element = document.getElementById("typewriter");
 
@@ -315,9 +395,7 @@
 
     typeWriter();
   });
-
 </script>
-
 
 <script src="assets/js/main.js"></script>
 
